@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Node
+chat-ui/node_modules/
+chat-ui/dist/
+
+# Docker
+*.log
+docker-compose.override.yml
+
