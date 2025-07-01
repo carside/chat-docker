@@ -38,7 +38,8 @@ const ChatUI = () => {
 
   try {
     // 2) send it to the backend
-    const res = await fetch('http://0.0.0.0:8000/generate', {
+    // const res = await fetch('http://0.0.0.0:8000/generate', {
+    const res = await fetch('/generate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ prompt: text })

@@ -5,13 +5,13 @@ services:
       context: .
       dockerfile: prompt/Dockerfile
     ports:
-      - 8000:8000
+      - 9001:8000
 
   ui:
     build:
       context: ./chat-ui
       dockerfile: Dockerfile
     ports:
-      - 80:80
+      - 91:80
     depends_on:
       - api
